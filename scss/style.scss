@@ -1,0 +1,33 @@
+// Creamos nuevas variables y modificamos variables ya creadas por Bootstrap
+$negrita: bold;
+$primary: #FFBA41;
+$secondary: white;
+
+// Importamos bootstrap.scss y los .scss creados
+@import "bootstrap";
+@import "mixin";
+@import "estructura";
+@import "animaciones";
+@import "textos";
+
+.boton_buscar {
+    background-color: $primary;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: $secondary;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    &:hover {
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+.borde_imagen_nosotros {
+    border: solid 2px black;
+    border-radius: 10%;
+}
+
+
+

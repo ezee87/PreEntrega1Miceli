@@ -1,0 +1,67 @@
+.imagen_nosotros {
+    &:hover {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.imagen_catalogo {
+    &:hover {
+        transform: scale(1.02, 1.02);
+    }
+}
+
+.animacion_logo {
+    animation-name: entra_logo;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 0;
+}
+
+@keyframes entra_logo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animacion_saltar {
+    animation-name: saltar;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 0;
+}
+
+@keyframes saltar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.animacion_caer {
+    animation-name: caer;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 0;
+}
+
+@keyframes caer {
+    from {
+        transform: translateY(-12px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
