@@ -8,19 +8,19 @@ const comprarProductos = () => {
     let seguirComprando = false;
 
     do {
-        producto = prompt('¿Que desea comprar? Las opciones son: Herakles, Oreo y Pokeball').toLowerCase;
+        producto = prompt('¿Que desea comprar? Las opciones son: Herakles, Oreo y Pokeball');
         cantidad = parseInt(prompt('Ingrese la cantidad que desea del producto '));
 
         let cantidadValidada = validarCantidad(cantidad);
 
         switch (producto) {
-            case 'herakles':
+            case 'Herakles':
                 precio = 200;
                 break;
-            case 'oreo':
+            case 'Oreo':
                 precio = 300;
                 break;
-            case 'pokeball':
+            case 'Pokeball':
                 precio = 400;
                 break;
             default:
